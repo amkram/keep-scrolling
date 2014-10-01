@@ -14,6 +14,8 @@ chrome.runtime.onMessage.addListener(
 
 	    var newDiv = document.createElement( "popup" );
 	    chrome.storage.local.set({"feet": feet});
+	    if(isNaN(feet))
+	    	chrome.storage.local.set({"feet": 0});
 		newDiv.className = "popupStyle";
 		newDiv.innerHTML = "You Have Scrolled " + miles + " Miles and <br>" + feet.toFixed(1) + " Feet!";
 		
