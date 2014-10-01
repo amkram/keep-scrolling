@@ -1,0 +1,29 @@
+#mainPopup {
+		padding: 0px;
+		height: 100px;
+		width: 295px;
+
+
+	}
+
+#popupStyle{
+		background-color: rgba(161, 237, 161, .67);
+		-webkit-box-shadow: 0 0 100px 20px #A1EDA1;
+
+		font-family: "AudioWide";
+		font-weight: 100;
+		font-size: 20px;
+
+		margin-left: auto;
+    	margin-right: auto;
+    	width: 70%;
+    	text-align: center;
+
+		-webkit-animation: pop .6s;
+
+		
+	}
+@-webkit-keyframes pop {
+    from {-webkit-transform: scale(0) rotate(0deg) translateY(0px); }
+    to {-webkit-transform: scale(1) rotate(0deg) translateY(0px);}
+}
